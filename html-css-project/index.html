@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description", content="This is a website"> 
+        <meta name="author", content="ska"> 
+        <meta name="keywords", content="html, tutorial"> 
+        <meta name="viewport", content="width = device-width, intial-scale=1.0"> 
+        <title>Project</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div id="logo">
+                    <img src="solid.png" class="logoImg" id="logoid">
+                    SOLID Principle
+                </div>
+                <nav class="navbar">
+                    <a class="active" href="#">Home</a>
+                    <a class="notActive" href="#">Visit</a>
+                    <a class="notActive" href="#">Care</a>
+                    <span class="dropdown1" id="rightal">
+                        <button class="dropbtn">
+                            Login <i class="arrow down"></i>
+                        </button>
+                        <span class="dropdown1-content">
+                            <a href="#">Login</a>
+                            <a href="#">SignIn</a>
+                        </span>
+                    </span>
+                    <!-- <label for="login"></label>
+                    <select name="login" style="" id="rightal">
+                        <option value="login"><a href="#">login</a></option>
+                        <option value="SignIn"><a href="#">SignIn</a></option>
+                    </select> -->
+                </nav>
+            </header>            
+            <main>
+                <span class="screen50">
+                    <div>
+                        <!-- <label for="Mamaml1"></label>
+                        <select name="Mamaml1" class="dropdown">
+                            <option value="Mamaml1"><a href="#">Mamaml1</a></option>
+                            <option value="Mamaml1"><a href="#">Mamaml1</a></option>
+                        </select>
+                        <br>
+                        <label for="Mamaml2"></label>
+                        <select name="Mamaml2" class="dropdown">
+                            <option value="Mamaml2"><a href="#">Mamaml2</a></option>
+                            <option value="Mamaml2"><a href="#">Mamaml2</a></option>
+                        </select> -->
+                        <button class="accordion">Menu 1 <i class="arrow down"></i></button>
+                        <div class="panel">
+                            <button>Option1</button>
+                            <button>Option2</button>
+                            <button>Option3</button>
+                        </div>
+                        <button class="accordion">Menu 2 <i class="arrow down"></i></button>
+                        <div class="panel">
+                            <button>Option1</button>
+                            <button>Option2</button>
+                            <button>Option3</button>
+                        </div>
+                        <button class="accordion">Menu 3 <i class="arrow down"></i></button>
+                        <div class="panel">
+                            <button>Option1</button>
+                            <button>Option2</button>
+                            <button>Option3</button>
+                        </div>
+                    </div>
+
+                    <script>
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+
+                        for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function() {
+                            /* Toggle between adding and removing the "active" class,
+                            to highlight the button that controls the panel */
+                            this.classList.toggle("active");
+
+                            /* Toggle between hiding and showing the active panel */
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                            } else {
+                            panel.style.display = "block";
+                            }
+                        });
+                        }
+                    </script>
+                </span>
+                <span class="screenright50">
+                    <div class="allborder">
+                        <div class="bottomborder">
+                            <img src="images.png" height="50" class="roundImg">
+                            The SOLID Principles are five principles of Object-Oriented class design. 
+                            They are a set of rules and best practices to follow while designing a class structure. 
+                            These five principles help us understand the need for certain design patterns and 
+                            software architecture in general. So I believe that it is a topic that every developer 
+                            should learn. This article will teach you everything you need to know to apply 
+                            SOLID principles to your projects.
+                        </div>
+                        <p  class="containText">
+                            The Single Responsibility Principle states that a class should do one thing and 
+                            therefore it should have only a single reason to change. To state this principle 
+                            more technically: Only one potential change (database logic, logging logic, and so on.) 
+                            in the software’s specification should be able to affect the specification of the class. 
+                            This means that if a class is a data container, like a Book class or a Student class, and 
+                            it has some fields regarding that entity, it should change only when we change the data 
+                            model. Following the Single Responsibility Principle is important. First of all, because 
+                            many different teams can work on the same project and edit the same class for different 
+                            reasons, this could lead to incompatible modules. Second, it makes version control easier. 
+                            For example, say we have a persistence class that handles database operations, and 
+                            we see a change in that file in the GitHub commits. By following the SRP, we will 
+                            know that it is related to storage or database-related stuff. Merge conflicts are 
+                            another example. They appear when different teams change the same file. But if the 
+                            SRP is followed, fewer conflicts will appear – files will have a single reason to change, 
+                            and conflicts that do exist will be easier to resolve.
+                        </p>
+                    </div>
+                    <br>
+                    <div class="allborder">
+                        <div class="bottomborder">
+                            <table>
+                                <tr>
+                                    <td><img src="images.png" height="50" class="roundImg"></td>
+                                    <td>The SOLID Principles are five principles of Object-Oriented class design. 
+                                        They are a set of rules and best practices to follow while designing a class structure. 
+                                        These five principles help us understand the need for certain design patterns and 
+                                        software architecture in general. So I believe that it is a topic that every developer 
+                                        should learn. This article will teach you everything you need to know to apply 
+                                        SOLID principles to your projects.</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="containText">
+                            <img src="1_QXKvE2F44XTkBi3YDvroWw.jpeg" height="220" class="imgcomp">
+                            The Single Responsibility Principle states that a class should do one thing and 
+                            therefore it should have only a single reason to change. To state this principle 
+                            more technically: Only one potential change (database logic, logging logic, and so on.) 
+                            in the software’s specification should be able to affect the specification of the class. 
+                            This means that if a class is a data container, like a Book class or a Student class, and 
+                            it has some fields regarding that entity, it should change only when we change the data 
+                            model. Following the Single Responsibility Principle is important. First of all, because 
+                            many different teams can work on the same project and edit the same class for different 
+                            reasons, this could lead to incompatible modules. Second, it makes version control easier. 
+                            For example, say we have a persistence class that handles database operations, and 
+                            we see a change in that file in the GitHub commits. By following the SRP, we will 
+                            know that it is related to storage or database-related stuff. Merge conflicts are 
+                            another example. They appear when different teams change the same file. But if the 
+                            SRP is followed, fewer conflicts will appear – files will have a single reason to change, 
+                            and conflicts that do exist will be easier to resolve.
+                        </p>
+                    </div>
+                    <br>
+                    <div class="allborder">
+                        <div class="bottomborder">
+                            <table>
+                                <tr>
+                                    <td><img src="images.png" height="50" class="roundImg"></td>
+                                    <td width="500px">The SOLID Principles are five principles of Object-Oriented class design. 
+                                        They are a set of rules and best practices to follow while designing a class structure. 
+                                        </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="containText">
+                            <img src="1_QXKvE2F44XTkBi3YDvroWw.jpeg" height="220" class="imgcomp">
+                            The Single Responsibility Principle states that a class should do one thing and 
+                            therefore it should have only a single reason to change. To state this principle 
+                            more technically: Only one potential change (database logic, logging logic, and so on.) 
+                            in the software’s specification should be able to affect the specification of the class. 
+                            This means that if a class is a data container, like a Book class or a Student class, and 
+                            it has some fields regarding that entity, it should change only when we change the data 
+                            model. Following the Single Responsibility Principle is important. First of all, because 
+                            many different teams can work on the same project and edit the same class for different 
+                            reasons, this could lead to incompatible modules. Second, it makes version control easier. 
+                            For example, say we have a persistence class that handles database operations, and 
+                            we see a change in that file in the GitHub commits. By following the SRP, we will 
+                            know that it is related to storage or database-related stuff. Merge conflicts are 
+                            another example. They appear when different teams change the same file. But if the 
+                            SRP is followed, fewer conflicts will appear – files will have a single reason to change, 
+                            and conflicts that do exist will be easier to resolve.
+                        </p>
+                    </div>
+                </span>
+                <div class="clearfix"></div>
+            </main>
+            <br>
+            <br>
+            <footer></footer>
+        </div>
+    </body>
+</html>
